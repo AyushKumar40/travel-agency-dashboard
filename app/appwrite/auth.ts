@@ -45,7 +45,7 @@ export const storeUserData = async () => {
   }
 };
 
-export const getGooglePicture = async (accessToken: string) => {
+const getGooglePicture = async (accessToken: string) => {
   try {
     const response = await fetch(
       "https://people.googleapis.com/v1/people/me?personFields=photos",
